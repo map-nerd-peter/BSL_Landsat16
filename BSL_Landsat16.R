@@ -64,8 +64,8 @@ BSL_16 <-
     bsl.top <- bsl.joint[ratio43 > quantile(ratio43, ulimit, na.rm=TRUE), ]
     bsl.test <- bsl.test[ratio43 > quantile(ratio43, ulimit, na.rm=TRUE)]
     bsl.top <- bsl.top[bsl.test == min(bsl.test), ]
-    bsl.summ<-bsl.lmodel2
+    bsl.summary<-bsl.lmodel2
     if(!is.null(dim(bsl.top))) bsl.top <- bsl.top[sample(1:nrow(bsl.top), 1),]
     
-    list(BSL=bsl.lm, top=bsl.top, summ=bsl.summ)
+    list(BSL=bsl.lm, top=bsl.top, summary=bsl.summary)
   }
