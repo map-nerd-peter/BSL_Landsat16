@@ -1,7 +1,7 @@
 library("raster")
 library("lmodel2")
 
-BSL_L16 <-
+BSL_16 <-
   function(band3, band4, method = "quantile", ulimit = .99, llimit = .005)
   {
     # find Bare Soil Line and vegetation peak
