@@ -13,7 +13,7 @@ red <- as(sat[[4]], 'SpatialGridDataFrame')
 
 nir <- as(sat[[5]], 'SpatialGridDataFrame')
 
-result.bsl <- BSL_16(red, nir, method = "quantile", ulimit = 0.995, llimit = 0.005)
+result.bsl <- BSL_16(red, nir, method = "quantile", ulimit = 0.99, llimit = 0.01)
 
 #Prints the intercept and slope values for the bare soil line
 
