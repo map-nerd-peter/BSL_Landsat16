@@ -22,3 +22,8 @@ result.bsl$BSL
 #Prints the summary statistics for the bare soil line 
 
 result.bsl$summary
+
+About the Bare Soil Line:
+--------------------------
+
+The bare soil line is a linear relationship between bare soil reflectances observed in two different wavelengths.  An example is the relationship between Near Infrared and Red wavelengths which can be used to [estimate soil properties from remotely sensed images](https://naldc.nal.usda.gov/download/9394/PDF)
