@@ -10,7 +10,7 @@ Steps to Run the Program:
 
 * Choose the area the Landsat area that you want to analyze. The image size should not exceed 5 megabytes in size.
 
-* Edit line 75 in the BSL_Landsat16.R script so that it points to the Landsat image that you want to run, and then run it in your R program (e.g. R Studio).
+* Edit line 75 in the [BSL_Landsat16.R](https://github.com/map-nerd-peter/BSL_Landsat16/blob/master/BSL_Landsat16.R) script so that it points to the Landsat image that you want to run, and then run it in your R editor program (e.g. R Studio).
 
 About the Bare Soil Line:
 -------------------------
