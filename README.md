@@ -15,6 +15,6 @@ Steps to Run the Program:
 About the Bare Soil Line:
 -------------------------
 
-The bare soil line is a linear relationship between bare soil reflectances observed in two different wavelengths.  An example is the relationship between Near Infrared and Red wavelengths which can be used to show the boundary between the soil and vegetation pixels.  The vegetation pixels will be above the soil line. The bare soil line can also [estimate soil properties from remotely sensed images](https://naldc.nal.usda.gov/download/9394/PDF)
+The bare soil line is a linear relationship between bare soil reflectances observed in two different wavelengths.  An example is the relationship between Near Infrared and Red wavelengths which can be used to show the boundary between the soil and vegetation pixels. The vegetation pixels will be above the soil line. The green dots represent the full canopy point (maximum vegetation). The bare soil line can also [estimate soil properties from remotely sensed images](https://naldc.nal.usda.gov/download/9394/PDF).
 
-![Sample Bare Soil Line Image](example_plots/BSL_sample_image.png "Click to see enlarged plot image")
+![Sample Bare Soil Line Image](example_plots/BSL_sample_image.png "Click to see enlarged plot image").
