@@ -69,3 +69,23 @@ BSL_16 <-
     
     list(BSL=bsl.lm, top=bsl.top, summary=bsl.summary)
   }
+
+
+#Set your Landsat image and location in line 75...
+sat <- brick("C:\\temp\\landsat8_image.tif")
+
+#Landsat band 3 DN is red and Landsat band 4 DN is near infrared (nir)
+red <- as(sat[[3]], 'SpatialGridDataFrame')
+nir <- as(sat[[4]], 'SpatialGridDataFrame')
+result.bsl <- BSL_16(red, nir, method = "quantile", ulimit = 0.99, llimit = 0.01)
+
+#Prints the intercept and slope values for the bare soil line
+result.bsl$BSL
+
+#Prints the summary statistics for the bare soil line
+result.bsl$summary
+
+#Plot the bare soil line and vegetation pixels, and the top pixels.
+plot(as.vector(as.matrix(red)), as.vector(as.matrix(nir)))
+abline(result.bsl$BSL, col="red")
+points(result.bsl$top[1], result.bsl$top[2], col="green", cex=2, pch=16)
