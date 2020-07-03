@@ -1,7 +1,7 @@
 Bare Soil Line (16 Bit) Function for R
 ========================================
 
-* This is a Bare Soil Line function (BSL_16) that is used to calculate bare soil lines from 16 bit satellite images.  This function is based on the landsat/BSL.R code (https://github.com/cran/landsat/blob/master/R/BSL.R) written by S. Goslee.  The original landsat/BSL.R package only calculated 8 bit values from Landsat images. I reworked the code so that it can process 16 bit satellite image values (e.g. Landsat 8, RapidEye, etc.). This program can process 16 bit image values that have a range between 0 and 65534. 
+* This is a Bare Soil Line function (BSL_16) that is used to calculate bare soil lines from 16 bit satellite images.  This function is based on the landsat/BSL.R code (https://github.com/cran/landsat/blob/master/R/BSL.R) written by S. Goslee.  The original landsat/BSL.R package only calculated 8 bit values from Landsat images. I reworked the code so that it can process 16 bit satellite image values (e.g. Landsat 8, RapidEye, etc.). This program can process 16 bit image values that have a range between 0 and 65534 such as images from Landsat 8 or other Satellite imaging platforms (e.g. Planet Labs). This program will generate a Bare Soil Line based on a Model II linear regression and provide statistical parameters from the Model II regression. 
 
 About the Bare Soil Line:
 -------------------------
@@ -13,7 +13,7 @@ The bare soil line is a linear relationship between bare soil reflectances obser
 Steps to Run the Program:
 -------------------------
 
-* Download a Landsat 8 .tif format image from a [Landsat image downloader](https://earthexplorer.usgs.gov/)
+* Download a Landsat 8 .tif format image from a [Landsat image downloader](https://earthexplorer.usgs.gov/). You can also use 16 bit images from other Satellite imaging platforms (e.g. Planet Labs). 
 
 * Choose the area the Landsat area that you want to analyze. The image size should not exceed 5 megabytes in size.
 
