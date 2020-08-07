@@ -1,7 +1,7 @@
 Bare Soil Line (16 Bit) Function for R
 ========================================
 
-This is a Bare Soil Line function (BSL_16) that is used to calculate bare soil lines from 16 bit satellite images.  This function enhances the original landsat/BSL.R code (https://github.com/cran/landsat/blob/master/R/BSL.R written by S. Goslee) by processing 16 bit image values (e.g. Landsat 8, Planet Labs images, etc.). This program will generate a Bare Soil Line based on a Model II linear regression and provide statistical parameters from the Model II regression. 
+This is a Bare Soil Line function (BSL_16) that is used to calculate bare soil lines from 16 bit satellite images.  This function enhances the original landsat/BSL.R code written by S. Goslee (https://github.com/cran/landsat/blob/master/R/BSL.R) by processing 16 bit image values (e.g. image data from Landsat 8, Planet Labs, etc.). This program will generate a Bare Soil Line based on statistical parameters from a Model II regression. 
 
 About the Bare Soil Line:
 -------------------------
